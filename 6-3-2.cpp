@@ -49,7 +49,7 @@ void main()
 	{
 		for (int j = 0; j < COL; j++)
 		{
-			printf(" %3d ", *masPtr[i]);
+			printf(" %3d ", *masPtr[i]);//типо вывод массива , но выводит абы что
 		}
 		cout <<endl;
 	}
