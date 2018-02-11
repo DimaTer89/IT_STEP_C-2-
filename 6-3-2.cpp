@@ -44,19 +44,14 @@ void main()
 			}
 		}
 	}
-	cout << endl;
+	cout << " Преобразованный массив \n";
 	for (int i = 0; i < ROW; i++)
 	{
-		cout <<" "<< *masPtr[i] << endl;
-	}
-	ptr = arr[0];
-	for (int i = 0; i < ROW; i++)
-	{
-		for (int j = 0; j < COL; j++, ptr++)
+		for (int j = 0; j < COL; j++)
 		{
-			printf(" %3d ", *ptr);
+			printf(" %3d ", *masPtr[i]);
 		}
-		cout << endl;
+		cout <<endl;
 	}
 	cout << endl;
 	system("pause");
