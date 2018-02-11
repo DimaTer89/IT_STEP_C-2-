@@ -44,15 +44,16 @@ void main()
 			}
 		}
 	}
-	cout << " Преобразованный массив \n";
+        cout << " Преобразованный массив \n";
 	for (int i = 0; i < ROW; i++)
 	{
-		for (int j = 0; j < COL; j++)
+		printf(" %3d ", *masPtr[i]);
+		ptr = &arr[i][1];
+		for (int j = 1; j < COL; j++,ptr++)
 		{
-			printf(" %3d ", *masPtr[i]);//типо вывод массива , но выводит абы что
+			printf(" %3d ", *ptr);
 		}
 		cout <<endl;
 	}
-	cout << endl;
 	system("pause");
 }
