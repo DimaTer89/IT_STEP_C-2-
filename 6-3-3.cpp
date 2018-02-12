@@ -18,16 +18,18 @@ void main()
 		cout << " " << names[i] << " ";
 	}
 	cout << endl;
+	char ***mPtr = male;
 	cout << " Список мужских имён \n";
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < 5; i++,mPtr++)
 	{
-		cout << " " << *male[i] << "  ";
+		cout << " " << **mPtr << "  ";
 	}
 	cout << endl;
+	char ***wPtr = female;
 	cout << " Список женских имён \n";
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < 5; i++,wPtr++)
 	{
-		cout << " " << *female[i] << "  ";
+		cout << " " << **wPtr << "  ";
 	}
 	cout << endl;
 	system("pause");
