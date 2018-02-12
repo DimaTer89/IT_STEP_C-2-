@@ -47,8 +47,7 @@ void main()
         cout << " Преобразованный массив \n";
 	for (int i = 0; i < ROW; i++)
 	{
-		printf(" %3d ", *masPtr[i]);
-		ptr = &arr[i][1];
+		ptr = masPtr[i];
 		for (int j = 1; j < COL; j++,ptr++)
 		{
 			printf(" %3d ", *ptr);
