@@ -80,8 +80,8 @@ void main() {
 	tworandArr(twoArr[0], ROW, COL);
 	twoprintArr(twoArr[0], ROW, COL);
 	for (int i = 0; i < ROW; i++) {
-		cout << " Индекс суммы максимального элемента = " << indexMax(twoArr[i], COL) << endl;
-		cout << " Индекс суммы минимального элемента = " << indexMin(twoArr[i], COL) << endl;
+		cout << " Индекс " <<i + 1<<" строки с максимальной суммой цифр числа = " << indexMax(twoArr[i], COL) << endl;
+		cout << " Индекс " << i + 1 << " строки с минимальной суммой цифр числа = " << indexMin(twoArr[i], COL) << endl;
 	}
 	for (int i = 0; i < ROW; i++) {
 		int min = indexMin(twoArr[i], COL);
